@@ -1,25 +1,32 @@
 import { Product } from "../types/DataTypes";
+import yardlong from "../images/yardlong.png";
+import broccoli from "../images/broccoli.png";
+import zucchini from "../images/zucchini.png";
+import garlic from "../images/garlic.png";
+import redcabbage from "../images/redcabbage.png";
+import favabeans from "../images/favabeans.png";
 
 export const productsData: Product[] = [
   {
-    id: "garlic",
-    title: "Garlic",
-    shortDesc: "Premium Nilgiris garlic — strong flavour, long shelf life.",
+    id: 1,
+    title: "Asparagus Beans",
+    shortDesc: "Asparagus beans (also known as yardlong beans or snake beans).",
     longDescBullets: [
-      "Origin: Nilgiris, Tamil Nadu, India",
-      "Recommended storage: 0–2°C for long storage; ambient for short-term",
-      "Pack options: 5kg ventilated cartons, mesh bags as required",
-      "Average shelf life: 3–4 months (when stored properly)",
-      "Quality: Cleaned, graded and free from soil/debris",
-      "HS Code: 0703"
+      "Maintaining in the temperature  7°C - 10°C (45°F - 50°F).",
+      "Pre-cooling to remove field heat immediately after harvesting.",
+      "Harvesting early in the morning when temperatures are cool.",
+      "Choosing beans that are firm, crisp, and of uniform color (typically green and glossy).",
+      "Sorting carefully. Removing beans that are damaged, diseased, bruised, or over-mature.",
+      "Reefer containers will be used to have settings to control humidity.",
+      "Ooty Asparagus beans have a post-harvest shelf life of 10 to 14 days."
     ],
-    image: "/images/garlic.jpg",
+    image: yardlong,
     packSizes: ["5kg", "10kg"],
     hsCode: "0703"
   },
   {
-    id: "okra",
-    title: "Okra (Lady Finger)",
+    id:2,
+    title: "Broccoli",
     shortDesc: "Tender okra picked early morning, pre-cooled to preserve quality.",
     longDescBullets: [
       "Harvest window: early morning to reduce heat stress",
@@ -29,13 +36,13 @@ export const productsData: Product[] = [
       "Quality: Sorted by size and free from blemishes",
       "HS Code: 0709"
     ],
-    image: "/images/okra.jpg",
+    image: broccoli,
     packSizes: ["5kg"],
     hsCode: "0709"
   },
   {
-    id: "drumstick",
-    title: "Drumsticks",
+    id: 3,
+    title: "Zucchini Green",
     shortDesc: "Fresh drumsticks — crisp and well-trimmed for export quality.",
     longDescBullets: [
       "Origin: Local Nilgiris farms",
@@ -45,13 +52,13 @@ export const productsData: Product[] = [
       "Quality: Washed, trimmed and graded",
       "HS Code: 0709"
     ],
-    image: "/images/drumstick.jpg",
+    image:zucchini,
     packSizes: ["10kg"],
     hsCode: "0709"
   },
   {
-    id: "drumstick2",
-    title: "Drumsticks",
+    id: 4,
+    title: "Garlic",
     shortDesc: "Fresh drumsticks — crisp and well-trimmed for export quality.",
     longDescBullets: [
       "Origin: Local Nilgiris farms",
@@ -61,13 +68,13 @@ export const productsData: Product[] = [
       "Quality: Washed, trimmed and graded",
       "HS Code: 0709"
     ],
-    image: "/images/drumstick.jpg",
+    image: garlic,
     packSizes: ["10kg"],
     hsCode: "0709"
   },
   {
-    id: "drumstick3",
-    title: "Drumsticks",
+    id: 5,
+    title: "Cabbage Red",
     shortDesc: "Fresh drumsticks — crisp and well-trimmed for export quality.",
     longDescBullets: [
       "Origin: Local Nilgiris farms",
@@ -77,13 +84,13 @@ export const productsData: Product[] = [
       "Quality: Washed, trimmed and graded",
       "HS Code: 0709"
     ],
-    image: "/images/drumstick.jpg",
+    image: redcabbage,
     packSizes: ["10kg"],
     hsCode: "0709"
   },
   {
-    id: "drumstick4",
-    title: "Drumsticks",
+    id: 6,
+    title: "Fava Beans",
     shortDesc: "Fresh drumsticks — crisp and well-trimmed for export quality.",
     longDescBullets: [
       "Origin: Local Nilgiris farms",
@@ -93,7 +100,7 @@ export const productsData: Product[] = [
       "Quality: Washed, trimmed and graded",
       "HS Code: 0709"
     ],
-    image: "/images/drumstick.jpg",
+    image: favabeans,
     packSizes: ["10kg"],
     hsCode: "0709"
   }

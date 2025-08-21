@@ -11,7 +11,7 @@ export default function Quote() {
     email: "",
     phone: "",
     country: "",
-    productId: productsData?.[0]?.id ?? "", // default to first product if available
+    productId: productsData?.[0]?.id ?? 1, 
     quantity: "",
     incoterm: "FOB",
     shipmentMode: "Air",

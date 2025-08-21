@@ -1,4 +1,5 @@
 import { CheckCircle, Package, Ship, Globe } from "lucide-react";
+import ProcessSteps from "./ProcessSteps";
 
 export default function Process() {
   const steps = [
@@ -39,16 +40,7 @@ export default function Process() {
       <h1 className="text-4xl font-bold text-center mb-12">Our Export Process</h1>
       <div className="max-w-5xl mx-auto space-y-8">
         {steps.map((step) => (
-          <div
-            key={step.id}
-            className="flex items-start gap-4 bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition"
-          >
-            <div>{step.icon}</div>
-            <div>
-              <h2 className="text-xl font-semibold">{step.title}</h2>
-              <p className="text-gray-600">{step.description}</p>
-            </div>
-          </div>
+         <ProcessSteps id={step.id} icon={step.icon} title={step.title} description={step.description}/>
         ))}
       </div>
 

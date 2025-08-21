@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import logo from "../../images/logo.png";
 
 interface LinkItem {
   name: string;
@@ -22,13 +23,14 @@ const Navbar: React.FC = () => {
     <nav className="bg-green-700 text-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
-          {/* Logo */}
-          <div className="text-2xl font-bold tracking-wide">
-            Hithe Agro
+          <div className="flex items-center space-x-2 text-2xl font-bold tracking-wide">
+            <img
+              src={logo} // replace with your actual logo path
+              alt="Hithe Agro Logo"
+              className="h-8 w-8 object-contain"
+            />
+            <span>Hithe Agro Exports</span>
           </div>
-
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
             {links.map((link) => (
               <Link
@@ -41,7 +43,7 @@ const Navbar: React.FC = () => {
             ))}
             {/* Get Quote Button */}
             <Link
-               to="/quote"
+              to="/quote"
               className="ml-4 bg-yellow-400 text-green-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
             >
               Get Quote
@@ -74,11 +76,12 @@ const Navbar: React.FC = () => {
           <Link
             to="/quote"
             className="block px-4 py-2 bg-yellow-400 text-green-900 font-semibold hover:bg-yellow-500"
-            onClick={() =>{
-              alert("hi")
-              setOpen(false)}}
+            onClick={() => {
+              alert("hi");
+              setOpen(false);
+            }}
           >
-            Get 
+            Get
           </Link>
         </div>
       )}

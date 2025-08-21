@@ -1,5 +1,7 @@
+import { JSX } from "react";
+
 export type Product = {
-  id: string;
+  id: number;
   title: string;
   shortDesc: string;
   longDescBullets: string[];
@@ -15,10 +17,18 @@ export type QuoteForm = {
   email: string;
   phone: string;
   country: string;
-  productId: string;
+  productId: number;
   quantity: string; // allow units like "1000 kg" or numeric
   incoterm: string;
   shipmentMode: string;
   preferredDate: string;
   message: string;
 };
+
+export interface IProcessSteps
+{
+    id:number;
+    icon:JSX.Element;
+    title:string;
+    description:string;
+}
