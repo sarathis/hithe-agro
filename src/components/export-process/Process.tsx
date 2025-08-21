@@ -1,5 +1,6 @@
 import { CheckCircle, Package, Ship, Globe } from "lucide-react";
 import ProcessSteps from "./ProcessSteps";
+import Footer from "../Footer/Footer";
 
 export default function Process() {
   const steps = [
@@ -55,6 +56,7 @@ export default function Process() {
           Get in Touch
         </a>
       </div>
+      <Footer/>
     </div>
   );
 }

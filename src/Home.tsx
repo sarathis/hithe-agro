@@ -7,6 +7,7 @@ import ProductDetails from "./components/product/ProductDetails";
 import Process from "./components/export-process/Process";
 import Quote from "./components/quote/Quote";
 import Contact from "./components/contact/Contact";
+import LearnMore from "./components/learn-more/LearnMore";
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
           <Route path="/process" Component={Process} />
           <Route path="/contact" Component={Contact} />
           <Route path="/quote" Component={Quote} />
+          <Route path="/learn" Component={LearnMore} />
         </Routes>
       </div>
     </>

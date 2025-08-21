@@ -10,8 +10,8 @@ const ProcessSteps = (step: IProcessSteps) => {
       >
         <div>{step.icon}</div>
         <div>
-          <h2 className="text-xl font-semibold">{step.title}</h2>
-          <p className="text-gray-600">{step.description}</p>
+          <h2 className="text-xl font-semibold text-left">{step.title}</h2>
+          <p className="text-gray-600 text-left">{step.description}</p>
         </div>
       </div>
     </>
