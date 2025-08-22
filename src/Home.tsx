@@ -8,6 +8,13 @@ import Process from "./components/export-process/Process";
 import Quote from "./components/quote/Quote";
 import Contact from "./components/contact/Contact";
 import LearnMore from "./components/learn-more/LearnMore";
+import Site from "./components/site-map/Site";
+import FAQ from "./components/faq/Faq";
+import Certifications from "./components/certifications/Certifications";
+import Logistics from "./components/logistics/Logistics";
+import Gallery from "./components/gallery/Gallery";
+import Vision from "./components/Vision/Vision";
+
 const Home = () => {
   return (
     <>
@@ -23,6 +30,12 @@ const Home = () => {
           <Route path="/contact" Component={Contact} />
           <Route path="/quote" Component={Quote} />
           <Route path="/learn" Component={LearnMore} />
+          <Route path="/site" Component={Site} />
+          <Route path="/faq" Component={FAQ} />
+          <Route path="/cert" Component={Certifications} />
+          <Route path="/logi" Component={Logistics} />
+          <Route path="/gallery" Component={Gallery} />
+           <Route path="/vision" Component={Vision} />
         </Routes>
       </div>
     </>

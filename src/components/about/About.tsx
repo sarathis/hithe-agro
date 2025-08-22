@@ -35,10 +35,18 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-green-800 mb-3">
               Our Vision & Mission
             </h3>
-            <p className="text-gray-700">
-              To create a healthier community by providing access to fresh,
-              organic, and locally sourced produce while supporting sustainable
-              farming practices.
+            <p className="text-gray-700 text-left text-justify">
+              To be a globally trusted leader in agricultural exports,
+              delivering sustainable, high-quality produce that connects
+              communities and markets with excellence.
+            </p>
+            <br/>
+             <p className="text-gray-700 text-left text-justify">
+             We are committed to ensuring freshness, safety, and reliability
+              in every shipment. By embracing innovation, strengthening farmer
+              partnerships, and maintaining strict quality standards, we strive
+              to exceed customer expectations and contribute to a sustainable
+              global food supply chain.
             </p>
           </div>
 
