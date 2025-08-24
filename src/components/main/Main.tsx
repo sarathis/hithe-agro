@@ -2,6 +2,7 @@ import Banner from "./Banner";
 import Footer from "../Footer/Footer";
 import carton from "../../images/carton.png";
 import { Link } from "react-router-dom";
+import CoreValues from "./CoreValues";
 
 const Main = () => {
   return (
@@ -55,100 +56,7 @@ const Main = () => {
         </div>
       </section>
       <section className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Why Choose Hithe Agro?
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-              <img
-                src="https://img.icons8.com/color/96/vegetarian-food.png"
-                alt="Fresh Products"
-                className="mx-auto mb-4 w-16 h-16"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                100% Fresh
-              </h3>
-              <p className="text-gray-600">
-                Direct from farms, keeping the freshness and nutrition intact.
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-              <img
-                src="https://img.icons8.com/color/96/organic-food.png"
-                alt="Organic"
-                className="mx-auto mb-4 w-16 h-16"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Organic & Natural
-              </h3>
-              <p className="text-gray-600">
-                Our products are grown sustainably without harmful chemicals.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-              <img
-                src="https://img.icons8.com/color/96/delivery.png"
-                alt="Fast Delivery"
-                className="mx-auto mb-4 w-16 h-16"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Fast Delivery
-              </h3>
-              <p className="text-gray-600">
-                Quick, reliable, and safe delivery right at your doorstep.
-              </p>
-            </div>
-            {/* Card 3 */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-              <img
-                src="https://img.icons8.com/color/96/delivery.png"
-                alt="Fast Delivery"
-                className="mx-auto mb-4 w-16 h-16"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Fast Delivery
-              </h3>
-              <p className="text-gray-600">
-                Quick, reliable, and safe delivery right at your doorstep.
-              </p>
-            </div>
-            {/* Card 3 */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-              <img
-                src="https://img.icons8.com/color/96/delivery.png"
-                alt="Fast Delivery"
-                className="mx-auto mb-4 w-16 h-16"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Fast Delivery
-              </h3>
-              <p className="text-gray-600">
-                Quick, reliable, and safe delivery right at your doorstep.
-              </p>
-            </div>
-            {/* Card 3 */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-              <img
-                src="https://img.icons8.com/color/96/delivery.png"
-                alt="Fast Delivery"
-                className="mx-auto mb-4 w-16 h-16"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Fast Delivery
-              </h3>
-              <p className="text-gray-600">
-                Quick, reliable, and safe delivery right at your doorstep.
-              </p>
-            </div>
-          </div>
-        </div>
+      <CoreValues/>
       </section>
 
       <Footer />

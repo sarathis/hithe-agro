@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-16">
+    <div className="pt-2">
       {/* Header */}
       <div className="bg-green-700 text-white py-12 text-center">
         <h1 className="text-4xl font-bold">Contact Us</h1>

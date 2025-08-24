@@ -1,21 +1,26 @@
-import { JSX } from "react";
-import { IProcessSteps } from "../../types/DataTypes";
+"use client";
+import { motion } from "framer-motion";
 
-const ProcessSteps = (step: IProcessSteps) => {
+export default function ProcessSteps({ step }: { step: any }) {
   return (
-    <>
-      <div
-        key={step.id}
-        className="flex items-start gap-4 bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition"
-      >
-        <div>{step.icon}</div>
-        <div>
-          <h2 className="text-xl font-semibold text-left">{step.title}</h2>
-          <p className="text-gray-600 text-left">{step.description}</p>
-        </div>
+    <motion.div
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="flex items-start gap-6 w-full"
+    >
+      {/* Icon */}
+      <div className="flex items-center justify-center w-12 h-12 bg-green-600 text-white rounded-full shadow-md">
+        {step.icon}
       </div>
-    </>
-  );
-};
 
-export default ProcessSteps;
+      {/* Card */}
+      <div className="flex-1 p-6 rounded-xl shadow-lg bg-white border">
+        <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+        <p className="text-green-600 font-medium mb-2">{step.short}</p>
+        <p className="text-gray-600">{step.description}</p>
+      </div>
+    </motion.div>
+  );
+}

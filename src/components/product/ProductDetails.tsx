@@ -6,7 +6,6 @@ import { Check } from "lucide-react";
 
 export default function ProductDetail() {
   const { productId } = useParams();
-  console.log(useParams());
   const navigate = useNavigate();
   const product = productsData.find((p) => p.id === Number(productId));
 

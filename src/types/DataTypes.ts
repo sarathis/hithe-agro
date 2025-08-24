@@ -1,4 +1,5 @@
-import { JSX } from "react";
+import { LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, JSX, ReactNode, RefAttributes } from "react";
 
 export type Product = {
   id: number;
@@ -30,5 +31,14 @@ export interface IProcessSteps
     id:number;
     icon:JSX.Element;
     title:string;
+    short:string;
     description:string;
+}
+
+export interface IcoreValue
+{
+    id:number;
+    title:string;
+    content:string;
+    icon:ReactNode;
 }

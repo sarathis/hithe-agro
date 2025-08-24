@@ -78,7 +78,6 @@ const Navbar: React.FC = () => {
             to="/quote"
             className="block px-4 py-2 bg-yellow-400 text-green-900 font-semibold hover:bg-yellow-500"
             onClick={() => {
-              alert("hi");
               setOpen(false);
             }}
           >

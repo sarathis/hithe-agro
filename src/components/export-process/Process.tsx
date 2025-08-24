@@ -1,3 +1,4 @@
+"use client";
 import { CheckCircle, Package, Ship, Globe } from "lucide-react";
 import ProcessSteps from "./ProcessSteps";
 import Footer from "../Footer/Footer";
@@ -7,48 +8,64 @@ export default function Process() {
     {
       id: 1,
       title: "Sourcing",
-      description: "We source fresh vegetables directly from trusted Nilgiris farms.",
-      icon: <CheckCircle className="h-8 w-8 text-green-600" />,
+      short: "Fresh from Nilgiris farms.",
+      description:
+        "We partner directly with trusted Nilgiris farmers to handpick vegetables at the peak of freshness. This ensures maximum nutrition, natural taste, and longer shelf life before leaving the farm.",
+      icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       id: 2,
       title: "Quality Check",
-      description: "Every product is carefully inspected to meet international export standards.",
-      icon: <CheckCircle className="h-8 w-8 text-blue-600" />,
+      short: "Only the best makes it through.",
+      description:
+        "Every batch undergoes strict quality checks for size, weight, color, and freshness. Our experts follow international export standards so you can rely on consistent quality every time.",
+      icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       id: 3,
       title: "Packaging",
-      description: "We use modern cold storage & export-grade packaging for freshness.",
-      icon: <Package className="h-8 w-8 text-yellow-600" />,
+      short: "Freshness sealed with care.",
+      description:
+        "Using cold chain storage and export-grade packaging, we preserve natural freshness during transit. Our packing protects against damage, ensures compliance, and extends shelf life.",
+      icon: <Package className="h-6 w-6" />,
     },
     {
       id: 4,
       title: "Shipping",
-      description: "Fast and secure shipping from Coimbatore to Dubai and global destinations.",
-      icon: <Ship className="h-8 w-8 text-indigo-600" />,
+      short: "Reliable global logistics.",
+      description:
+        "From Coimbatore to Dubai and beyond, we partner with trusted logistics providers for secure shipping. With customs support and real-time tracking, your order is always on schedule.",
+      icon: <Ship className="h-6 w-6" />,
     },
     {
       id: 5,
       title: "Delivery",
-      description: "On-time delivery to your warehouse or doorstep, globally.",
-      icon: <Globe className="h-8 w-8 text-purple-600" />,
+      short: "On time, every time.",
+      description:
+        "We ensure timely delivery to warehouses, retail outlets, or doorsteps worldwide. Our commitment is freshness at destination, strengthening long-term trust and partnerships.",
+      icon: <Globe className="h-6 w-6" />,
     },
   ];
 
   return (
     <div className="pt-20 px-6 lg:px-20">
       <h1 className="text-4xl font-bold text-center mb-12">Our Export Process</h1>
-      <div className="max-w-5xl mx-auto space-y-8">
+
+      {/* Steps - vertical list, icons left, cards right */}
+      <div className="flex flex-col space-y-10 max-w-4xl mx-auto">
         {steps.map((step) => (
-         <ProcessSteps id={step.id} icon={step.icon} title={step.title} description={step.description}/>
+          <ProcessSteps key={step.id} step={step} />
         ))}
       </div>
 
-      {/* Call to Action */}
+      {/* CTA */}
       <div className="mt-16 text-center">
-        <h2 className="text-2xl font-bold mb-4">Looking to import fresh vegetables?</h2>
-        <p className="text-gray-600 mb-6">Contact us today to discuss your requirements and partnerships.</p>
+        <h2 className="text-2xl font-bold mb-4">
+          Looking to import fresh vegetables?
+        </h2>
+        <p className="text-gray-600 mb-6">
+          Contact us today to discuss your requirements and partnerships.
+        </p>
         <a
           href="/contact"
           className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-green-700 transition"
@@ -56,7 +73,8 @@ export default function Process() {
           Get in Touch
         </a>
       </div>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }

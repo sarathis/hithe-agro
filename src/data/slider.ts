@@ -1,11 +1,11 @@
- import beans from "../images/beans.jpg";
-import carrot from "../images/carrot.jpg";
-import garlic from "../images/garlics.jpg";
+ import ban1 from "../images/banner1.png";
+import ban2 from "../images/banner2.png";
+import ban3 from "../images/banner3.png";
 
  export const  slides = [
-    { title: "Fresh Garlic", img: garlic },
-    { title: "Organic Carrots", img: carrot },
-    { title: "Nilgiris Beans", img: beans },
+    { title: "Fresh vegetables directly from trusted Nilgiris farms.", img: ban1 ,coverPosition:"object-center"},
+    { title: "Modern cold storage & export-grade packaging for freshness.", img: ban2 ,coverPosition:"object-top"},
+    { title: "Fast and secure shipping to global destinations.", img: ban3 ,coverPosition:"object-center"},
   ];
   export const slideSettings = {
     dots: true,
