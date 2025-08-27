@@ -1,13 +1,13 @@
-interface IPagination
-{
-    currentPage:number;
-    totalPages:number;
-        setCurrentPage:React.Dispatch<React.SetStateAction<number>>;
+interface IPagination {
+  currentPage: number;
+  totalPages: number;
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const Pagination=(param:IPagination)=>{
-    return (<>
-         <div className="flex justify-center items-center gap-2 mt-10">
+const Pagination = (param: IPagination) => {
+  return (
+    <>
+      <div className="flex justify-center items-center gap-2 mt-10">
         <button
           disabled={param.currentPage === 1}
           onClick={() => param.setCurrentPage((prev) => prev - 1)}
@@ -38,6 +38,7 @@ const Pagination=(param:IPagination)=>{
           Next →
         </button>
       </div>
-    </>)
-}
+    </>
+  );
+};
 export default Pagination;

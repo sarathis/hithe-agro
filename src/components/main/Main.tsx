@@ -40,7 +40,10 @@ const Main = () => {
               products are carefully sourced to maintain authenticity and
               natural goodness.
             </p>
-            <Link to="/learn" className="bg-green-600 text-white px-6 py-3 rounded-lg w-fit hover:bg-green-700">
+            <Link
+              to="/learn"
+              className="bg-green-600 text-white px-6 py-3 rounded-lg w-fit hover:bg-green-700"
+            >
               Learn More
             </Link>
           </div>
@@ -56,7 +59,7 @@ const Main = () => {
         </div>
       </section>
       <section className="bg-gray-50 py-16">
-      <CoreValues/>
+        <CoreValues />
       </section>
 
       <Footer />
