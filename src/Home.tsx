@@ -16,6 +16,8 @@ import Gallery from "./components/gallery/Gallery";
 import Vision from "./components/Vision/Vision";
 
 const Home = () => {
+  const arr=[33,56,23,78,45];
+  console.log(arr[100]);
   return (
     <>
       <Navbar />
